@@ -6,7 +6,7 @@ import os
 #needs feh, praw, and requests installed
 
 r = praw.Reddit(user_agent='example')
-submissions = r.get_subreddit('animewallpaper').get_top(limit=20)
+submissions = r.get_subreddit('animewallpaper').get_top(limit=50)
 
 subList = [sub for sub in submissions] #list of submissions
 target = subList[0] #target is the goal picture; defaults to the first option
