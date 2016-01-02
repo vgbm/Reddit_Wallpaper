@@ -45,12 +45,15 @@ while True:
     #less noticeable for longer periods, but
     #quite noticeable for < ~20 seconds
     
-    
-    f = open(path,'wb')
-    f.write(requests.get(curr_link).content)
-    f.close()
-    
-    
-    os.system(bg_command)
+    try:
+        f = open(path,'wb')
+        f.write(requests.get(curr_link).content)
+        f.close()
+    except:
+        f = open(path,'wb')
+        f.write(requests.get(prev_link).content)
+        f.close()
+
+#    os.system(bg_command)
     
     time.sleep(delay)

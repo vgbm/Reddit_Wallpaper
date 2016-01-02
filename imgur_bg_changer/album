@@ -1,4 +1,4 @@
-BASE ALBUM LINK			(ex: https://imgur.com/a/w8Px3     )
-DESIRED IMAGE SAVE PATH 	(ex: /home/$name/Pictures/bgImg.jpg)
-MIN DELAY			(ex: 300	   		   )
-BG CHANGE COMMAND 		(ex: feh --bg-scale (no end space) )
+https://imgur.com/a/w8Px3
+/home/james/Pictures/bgImg.jpg
+300
+feh --bg-scale
