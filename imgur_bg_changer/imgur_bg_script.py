@@ -46,13 +46,12 @@ while True:
     #quite noticeable for < ~20 seconds
     
     try:
+        img = requests.get(curr_link).content
         f = open(path,'wb')
-        f.write(requests.get(curr_link).content)
+        f.write(img)
         f.close()
     except:
-        f = open(path,'wb')
-        f.write(requests.get(prev_link).content)
-        f.close()
+        pass
 
 #    os.system(bg_command)
     
